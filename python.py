@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 import random
 
 # Set your name and email (used for commits)
-GIT_USER_NAME = "Your Name"
-GIT_USER_EMAIL = "your.email@example.com"
+GIT_USER_NAME = "Avnish-Pathania"
+GIT_USER_EMAIL = "avnishpathania44@gmail.com"
 
 # How many days back you want to start faking commits
 days = 30  # Change this to go further back
