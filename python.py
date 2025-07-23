@@ -8,8 +8,8 @@ GIT_USER_NAME = "Avnish-Pathania"
 GIT_USER_EMAIL = "avnishpathania44@gmail.com"
 
 # How many days back you want to start faking commits
-days = 30  # Change this to go further back
-max_commits_per_day = 5  # Max commits per day
+days = 360  # Change this to go further back
+max_commits_per_day = 8  # Max commits per day
 
 # Setup user
 subprocess.call(["git", "config", "user.name", GIT_USER_NAME])
@@ -17,7 +17,7 @@ subprocess.call(["git", "config", "user.email", GIT_USER_EMAIL])
 
 for i in range(days):
     date = datetime.now() - timedelta(days=i)
-    num_commits = random.randint(1, max_commits_per_day)
+    num_commits = random.randint(0, max_commits_per_day)
     for j in range(num_commits):
         with open("log.txt", "a") as file:
             file.write(f"Fake commit for {date} #{j}\n")
